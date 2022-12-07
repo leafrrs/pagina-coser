@@ -1,74 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /*home*/
-.Home{
-
-    position: absolute;
-    width: 1366px;
-    height: 768px;
-    left: 0px;
-    top: 0px;
+body{
+   background-image: linear-gradient(#00000001,#00000063),url(images/home.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+}
+header{
+    background-color: rgba(0,0,0,0.7);
+    height: 75px;
 }
 
-.menu{
-position: absolute;
-width: 1366px;
-height: 80px;
-left: 0px;
-top: 0px; 
+.container{
+    max-width: 1400px;
+    padding: 3%;
+    margin: 0 auto;
 }
 
-.social{
-position: absolute;
-width: 200px;
-height: 28px;
-left: 1068px;
-top: 26px;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
+#logo{
+   background-repeat: no-repeat;
+   margin-left: 108px
+   ;
+ }
 
-.coserselect{
-
-position: absolute;
-width: 106px;
-height: 28px;
-left: 1068px;
-top: 26px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-/* identical to box height, or 200% */
-
-text-align: center;
-
-/* Coser - Vermelho */
-
-color: #E40329;
-}
-
-.instagram {
-position: absolute;
-left: 4.17%;
-right: 4.17%;
-top: 4.17%;
-bottom: 4.17%;}
-
-
-.facebook{
-
-    position: absolute;
-    left: 26.23%;
-    right: 29.51%;
-    top: 1.64%;
-    bottom: 14.75%;
-    background: #dedbdb;} 
-
-.a.logo{
-position: absolute;
-width: 106px;
-height: 45px;
-left: 108px;
-top: 18px;
-background: url(images/coser\logo\branco.png); 
-}
+ nav ul{
+    list-style: none;
+ }
+ nav ul li{
+    display: inline-block;
+    color: #DDDDDD;
+    align-items: center;
+    padding: 15px;
+ }

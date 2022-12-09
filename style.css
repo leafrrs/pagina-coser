@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 .cabecalho {
@@ -60,8 +60,8 @@ body {
 .icons a {
   margin: 0 10px;
 }
- 
-.facebook{
+
+.facebook {
   position: absolute;
   width: 20.33px;
   height: 20.33px;
@@ -69,7 +69,7 @@ body {
   top: 30px;
 }
 
-.instagram{
+.instagram {
   position: absolute;
   width: 20.33px;
   height: 20.33px;
@@ -93,7 +93,7 @@ main section img {
       rgba(0, 0, 0, 0) 21.61%,
       rgba(0, 0, 0, 0.758333) 88.57%,
       rgba(0, 0, 0, 0.8) 100%
-    ),
+    );
 }
 
 .container-home-info {
@@ -133,11 +133,9 @@ main section img {
   padding: 10px 0;
 }
 
-.icon-veja-mais i{
+.icon-veja-mais i {
   cursor: pointer;
 }
-
-
 
 .container-conheca-coser {
   display: grid;
@@ -159,7 +157,7 @@ main section img {
   width: 769px;
 }
 
-.conheca-coser h3{
+.conheca-coser h3 {
   color: #666666;
 }
 
@@ -173,7 +171,7 @@ main section img {
   gap: 30px;
   padding-top: 30px;
   box-shadow: 0px 14.6466px 22.5333px rgba(38, 58, 126, 0.14);
-border-radius: 9.01331px;
+  border-radius: 9.01331px;
 }
 
 .card-ex {
@@ -183,8 +181,8 @@ border-radius: 9.01331px;
   height: 266px;
 }
 
-.card-ex i{
-  color: #023C76;
+.card-ex i {
+  color: #023c76;
   width: 23.32px;
   height: 24.62px;
 }
@@ -227,8 +225,6 @@ border-radius: 9.01331px;
   width: 70%;
 }
 
-
-
 .coser-cuidado button {
   width: 30%;
   height: 50px;
@@ -252,7 +248,11 @@ border-radius: 9.01331px;
   height: 361.5px;
   left: 726px;
   top: 1726px;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.13) 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.13) 100%
+  );
 }
 
 .container-service {
@@ -280,21 +280,21 @@ border-radius: 9.01331px;
   gap: 10px;
 }
 
-.card-service h2{
+.card-service h2 {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.card-service p{
+.card-service p {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.702469);
 }
 
-.button{
+.button {
   background: none;
   outline: none;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -307,12 +307,12 @@ border-radius: 9.01331px;
   margin: 0 100px;
 }
 
-.spec-service h2{
+.spec-service h2 {
   font-size: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.spec-service p{
+.spec-service p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.702469);
 }
@@ -320,9 +320,60 @@ border-radius: 9.01331px;
 .spec-service button {
   width: 177px;
   height: 48px;
-  background: #E40329;;
+  background: #e40329;
   border-radius: 7px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-style: normal;
+}
+
+.contact {
+  background-image: url(assets/59a92df5b9ad9385037fbc286c34472d.jpg);
+}
+
+.formulario {
+  max-width: 650px;
+  text-align: center;
+  margin: 20px auto;
+}
+.formulario input,
+form textarea {
+  border: 0;
+  outline: 0;
+  padding: 0.8em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  font-family: "open_sansregular";
+  font-size: 16px;
+  color: #424242;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+  color: #3cafe7;
+  -moz-box-shadow: 0 0px 2px #3cafe7 !important;
+  -webkit-box-shadow: 0 0px 2px #3cafe7 !important;
+  box-shadow: 0 0px 2px #3cafe7 !important;
+}
+.formulario .btn-submit {
+  color: #fff;
+  background: #3cafe7;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.formulario .btn-submit:hover {
+  background-color: #424242;
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+.formulario textarea {
+  height: 174px;
 }

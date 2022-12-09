@@ -94,7 +94,6 @@ main section img {
       rgba(0, 0, 0, 0.758333) 88.57%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url(AF1QipP2ovLucL6UoeDgrujaFtuv-He8lWyllF0iddY=s1536.jpg);
 }
 
 .container-home-info {
@@ -256,10 +255,6 @@ border-radius: 9.01331px;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.13) 100%);
 }
 
-#overlay {
-  
-}
-
 .container-service {
   display: flex;
   align-items: center;
@@ -285,10 +280,49 @@ border-radius: 9.01331px;
   gap: 10px;
 }
 
+.card-service h2{
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.card-service p{
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.702469);
+}
+
+.button{
+  background: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .spec-service {
   display: flex;
   flex-direction: column;
   width: 470px;
   gap: 40px;
   margin: 0 100px;
+}
+
+.spec-service h2{
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.spec-service p{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.702469);
+}
+
+.spec-service button {
+  width: 177px;
+  height: 48px;
+  background: #E40329;;
+  border-radius: 7px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-style: normal;
 }

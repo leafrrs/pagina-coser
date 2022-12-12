@@ -343,9 +343,9 @@ main section img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 50px;
   max-width: 30%;
 }
+
 
 .container-form {
   max-width: 461px;
@@ -408,6 +408,7 @@ form .button-send {
   background: #023c76;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 form .button-send input:hover {

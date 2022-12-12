@@ -329,51 +329,173 @@ main section img {
 
 .contact {
   background-image: url(assets/59a92df5b9ad9385037fbc286c34472d.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfefc;
 }
 
-.formulario {
-  max-width: 650px;
-  text-align: center;
-  margin: 20px auto;
+.help {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 50px;
+  max-width: 30%;
 }
-.formulario input,
-form textarea {
-  border: 0;
-  outline: 0;
-  padding: 0.8em;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  display: block;
+
+.container-form {
+  max-width: 461px;
   width: 100%;
-  margin-top: 16px;
-  font-family: "open_sansregular";
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-left: 100px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
   font-size: 16px;
-  color: #424242;
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  resize: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  background: #ebebeb;
+  border-color: #ebebeb;
 }
-.formulario input:focus,
-.formulario textarea:focus {
-  color: #3cafe7;
-  -moz-box-shadow: 0 0px 2px #3cafe7 !important;
-  -webkit-box-shadow: 0 0px 2px #3cafe7 !important;
-  box-shadow: 0 0px 2px #3cafe7 !important;
+
+form textarea {
+  height: 80px;
+  width: 400px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  background: #ebebeb;
+  border-color: #ebebeb;
 }
-.formulario .btn-submit {
-  color: #fff;
-  background: #3cafe7;
-  cursor: pointer;
-  transition: 0.5s;
+
+form .button-send {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: #ebebeb;
+  background: #023c76;
+  color: #ffffff;
+  text-transform: uppercase;
 }
-.formulario .btn-submit:hover {
-  background-color: #424242;
-  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+
+form .button-send input:hover {
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
-.formulario textarea {
-  height: 174px;
+@media (max-width: 584px) {
+  .container-form {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+footer {
+  width: 1366;
+  height: 292px;
+  background: #023c76;
+}
+
+footer img {
+  align-items: center;
+  width: 144px;
+  height: 61px;
+  margin-left: 611px;
+  margin-top: 49px;
+}
+
+footer nav {
+  flex-direction: row;
+  margin-left: 480px;
+  margin-top: 38px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+footer nav a {
+  color: #ffffff;
+  outline: none;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer hr {
+  width: 1168px;
+  height: 1px;
+  opacity: 20%;
+  margin-left: 90px;
+  margin-top: 34px;
+}
+
+footer .social-footer {
+  color: #fafafa;
+  justify-content: start;
+}
+
+footer .social-footer img {
+  width: 24px;
+  height: 24px;
+}
+
+footer .direitos p {
+  margin-top: 25px;
+  margin-left: 510px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #d9dbe1;
+}
+
+footer .dev {
+  color: #fafafa;
+  align-items: flex-end;
 }

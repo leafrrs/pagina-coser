@@ -236,6 +236,95 @@ main section img {
   cursor: pointer;
 }
 
+.container-coser-cuidado button:hover {
+  opacity: 1;
+}
+
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #ffffff;
+  width: 770px;
+  max-width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header img {
+  width: 751px;
+  height: 309px;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 45px;
+  margin-top: 20px;
+  margin-left: 30%;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.modal-body p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+#close-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
+}
+
 .coser-video {
   display: flex;
   align-items: center;
@@ -345,7 +434,6 @@ main section img {
   gap: 20px;
   max-width: 30%;
 }
-
 
 .container-form {
   max-width: 461px;
